@@ -1,0 +1,25 @@
+.table img{
+    width: 200px;
+    height: 150px;
+}
+.price{
+    color: #ff6000;
+}
+.Logo{
+    width: 20px;
+}
+
+.addBasket:hover{
+    background-color: #ff6000 !important;
+    color: white !important;
+    border-color: #ff6000 !important;
+}
+#Total{
+    width: 40%;
+}
+.buttons-increament-and-decreament{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card</title>
+  <link rel="stylesheet" href="asset/CSS/style.css">
+  <!-- Bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Product Page</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="card.html">
+              <i class="fa-solid fa-basket-shopping"></i>
+              <sup id="CardCount">0</sup>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <div class="w-50 mx-auto mt-4 text-center d-none" id="Alert">
+    <div class="alert alert-danger" role="alert">
+      <i class="fa-solid fa-basket-shopping"></i> There are no products here! <a href="index.html">Start to
+        Shopping!</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-5">
+      <table class="table table-dark">
+        <thead id="AllProductBody">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Image</th>
+            <th scope="col">Price</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Count</th>
+
+            <th scope="col">Delete Product</th>
+
+          </tr>
+        </thead>
+        <tbody id="tbody">
+
+          <!-- <tr>
+                    <td>1</td>
+                    <td>
+                      <img src="/asset/image/again1.png" alt="">
+                    </td>
+                    <td>Coffee</td>
+                    <td>Americano</td>
+                    <td>1</td>
+                  </tr> -->
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-5">
+      <table id="Total" class="table table-dark">
+        <thead>
+          <tr>
+
+            <th scope="col">Total Price</th>
+
+
+          </tr>
+        </thead>
+        <tbody id="ttotal">
+
+
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+  <script src="asset/JS/app.js"></script>
+  <script src="asset/JS/card.js"></script>
+</body>
+
+</html>
